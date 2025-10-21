@@ -9,10 +9,10 @@
         WindowStartupLocation="CenterScreen"
         SizeToContent="Height">
     <StackPanel>
-        <RadioButton IsChecked="True" Margin="5" Name="Radio1" GroupName="formula">
+        <RadioButton IsChecked="True" Margin="5" Name="Radio1" GroupName="formula" Checked="Radio_Checked">
             <WrapPanel>
                 <Image Source="Images/1.png" Height="30" Margin="5"/>
-                <GroupBox Header="Parameters" Margin="5">
+                <GroupBox Header="Параметры" Margin="5" Name="R1Group">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
@@ -39,10 +39,10 @@
             </WrapPanel>
         </RadioButton>
 
-        <RadioButton Margin="5" Name="Radio2" GroupName="formula">
+        <RadioButton Margin="5" Name="Radio2" GroupName="formula" Checked="Radio_Checked">
             <StackPanel>
-                <Image Source="Images/2.png" Height="23" Margin="5"/>
-                <GroupBox Header="Parameters" Margin="5">
+                <Image Source="Images/2.png" Height="30" Margin="5"/>
+                <GroupBox Header="Параметры" Margin="5" Name="R2Group">
                     <StackPanel Orientation="Horizontal">
                         <Label Content="a" VerticalAlignment="Center"/>
                         <TextBox Text="0,00" MinWidth="70" Name="R2TextA" Margin="2" VerticalAlignment="Center"/>
@@ -60,10 +60,10 @@
             </StackPanel>
         </RadioButton>
 
-        <RadioButton Margin="5" Name="Radio3" GroupName="formula">
+        <RadioButton Margin="5" Name="Radio3" GroupName="formula" Checked="Radio_Checked">
             <StackPanel>
                 <Image Source="Images/3.png" Height="30" Margin="5"/>
-                <GroupBox Header="Parameters" Margin="5">
+                <GroupBox Header="Параметры" Margin="5" Name="R3Group">
                     <StackPanel Orientation="Horizontal">
                         <Label Content="a" VerticalAlignment="Center"/>
                         <TextBox Text="0,00" MinWidth="50" Name="R3TextA" Margin="2" VerticalAlignment="Center"/>
@@ -85,10 +85,10 @@
             </StackPanel>
         </RadioButton>
 
-        <RadioButton Margin="5" Name="Radio4" GroupName="formula">
+        <RadioButton Margin="5" Name="Radio4" GroupName="formula" Checked="Radio_Checked">
             <WrapPanel Orientation="Horizontal">
-                <Image Source="Images/4.png" Height="60" Margin="5"/>
-                <GroupBox Header="Параметры" Margin="5">
+                <Image Source="Images/4.png" Height="50" Margin="5"/>
+                <GroupBox Header="Параметры" Margin="5" Name="R4Group">
                     <StackPanel Orientation="Horizontal" Margin="5">
                         <Label Content="c" VerticalAlignment="Center"/>
                         <ComboBox MinWidth="70" VerticalAlignment="Center" Name="R4ComboC" SelectedIndex="0" Margin="5,0">
@@ -110,11 +110,10 @@
             </WrapPanel>
         </RadioButton>
 
-
-        <RadioButton Margin="5" Name="Radio5" GroupName="formula">
+        <RadioButton Margin="5" Name="Radio5" GroupName="formula" Checked="Radio_Checked">
             <StackPanel>
                 <Image Source="Images/var4.png" Height="60" Margin="5" />
-                <GroupBox Header="Parameters" Margin="5">
+                <GroupBox Header="Параметры" Margin="5" Name="R5Group">
                     <Grid Margin="5">
                         <Grid.RowDefinitions>
                             <RowDefinition/>
@@ -148,7 +147,6 @@
                 </GroupBox>
             </StackPanel>
         </RadioButton>
-
 
         <Button Content="Считать" Width="100" Margin="10" Click="Calc_Click"/>
     </StackPanel>
